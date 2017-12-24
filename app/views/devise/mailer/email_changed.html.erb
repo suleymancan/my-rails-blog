@@ -1,0 +1,9 @@
+<div class="container" align="center">
+<p>Selam <%= @email %>!</p>
+
+<% if @resource.try(:unconfirmed_email?) %>
+  <p>Sizinle e-posta adresinin değiştirileceğini bildirmek için sizinle iletişime geçiyoruz. <%= @resource.unconfirmed_email %>.</p>
+<% else %>
+  <p>Sizinle e-posta adresinin değiştirildiğini bildirmek için sizinle iletişime geçiyoruz. <%= @resource.email %>.</p>
+<% end %>
+</div>

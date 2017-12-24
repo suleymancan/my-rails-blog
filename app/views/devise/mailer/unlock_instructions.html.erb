@@ -1,0 +1,9 @@
+<div class="container" align="center">
+<p>Hello <%= @resource.email %>!</p>
+
+<p>Aşırı sayıda oturum açma girişimi yüzünden hesabınız kilitlendi.</p>
+
+<p>Hesabınızın kilidini açmak için aşağıdaki bağlantıyı tıklayın:</p>
+
+<p><%= link_to 'Hesabımı kilidini aç', unlock_url(@resource, unlock_token: @token) %></p>
+</div>

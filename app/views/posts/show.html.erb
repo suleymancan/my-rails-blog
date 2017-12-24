@@ -1,0 +1,68 @@
+<div class="panel-body">
+        <ul class="list-group" >
+            <li class="list-group-item" style="box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5); padding: 5px;">
+                <div class="row">
+                    <div class="col-xs-2 col-md-1">
+                       <%=image_tag @post.user.image.url(:mini) if @post.user.image?%> 
+                    </div>
+                    <div class="col-xs-10 col-md-11">
+                        <div>
+                            <div class="mic-info">
+                                 <a href="?user=<%=@post.user.id%>"> <%=@post.user.name%> </a> 
+                                  <div align="right"> <mark><i><%=t('postg')%>: <%=@post.created_at%></i></mark></div>
+                            </div>
+                        </div>
+                            <hr>
+                        
+                        <div class="comment-text">
+                             <mark><i><%=t('postb')%></i></i></mark>
+                             
+                           <b> <%=@post.title%> </b> <br/> <br>
+                            <div align="center" id="rootimage"><%=image_tag @post.image.url(:medium),class:"img img-responsive" if @post.image?%> </div>
+                            <br/> 
+                             <mark><i><%=t('postm')%></i></mark>
+                            <%=@post.msg%>
+                            
+                        </div>
+                          
+                        <hr>
+                        <div class="action">
+                       
+                         <%= link_to t('sil'), @post, :method => :delete, data: {confirm: 'Eminmisin?',commit: 'Evet'},class:"glyphicon glyphicon-trash" %> &nbsp; &nbsp;
+                          <%= link_to t('duzenle'), edit_post_path(@post),class:"glyphicon glyphicon-pencil" %> <br>
+                         
+                          <hr>
+                          
+                            <div id="<%=@post.id%>">
+                             <%if Like.where(user:current_user, post:@post).count>0%>
+                                 <%= link_to "", unlike_post_path(@post), class:"glyphicon glyphicon-heart",remote: :true, method: :put %>
+                                <%else%>
+                                <%= link_to "", like_post_path(@post), class:"glyphicon glyphicon-heart-empty",remote: :true, method: :put %>
+                                <%end%>
+                            </div>
+                        </div>
+                       
+                       
+                       <%= t('begen')%>(<%=@likeds.count%>) <br/>
+                         <% @likeds.each do |l|%>
+                        <%=l.user.name%> <br>
+                         <% end %>
+                         <hr>
+                    <div style="box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5); padding: 5px;"> 
+                       <%=render 'comments/form'%>
+                      <div id="comments" style="box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5); padding: 5px;">
+                    
+                      <%@comments.each do |c|%>
+                      
+                      <%=image_tag c.user.image.url(:mini) if c.user.image?%> <em> 
+                     <<%=c.user.name%> </em> <b><%=c.bdy%> </b>    <br/>
+                     <%end%> <br>
+                     </div>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+            </li>
+        </ul>
+    </div>
+</div>

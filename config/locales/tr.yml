@@ -1,0 +1,36 @@
+tr:
+  hello: "Merhaba dünya!"
+  welcome: "Açılış sayfası"
+  footer: "Fırat Üniversitesi, Teknoloji Fakültesi, Yazılım Mühendisliği"
+  anasayfa: "Ana Sayfa"
+  yeniyazi: "Yeni Yazı"
+  kayit: "Kayıt"
+  giris: "Giriş"
+  goruntule: 'Görüntüle'
+  duzenle: 'Düzenle'
+  sil: 'Sil'
+  foto: 'Foto'
+  basliklar: 'Başlıklar'
+  mesajlar: 'Mesajlar'
+  islemler: 'İşlemler'
+  duzenleprofil: 'Profil Düzenle'
+  cikis: 'Çıkış'
+  girisyap: 'Giriş Yap'
+  oturumac: 'Oturum Aç'
+  parolaunuttun: 'Parolanı mı unuttun?'
+  onaytalimati: 'Onay talimatını almadınız mı?'
+  kilitacma: 'Kilidini açma talimatları almadınız mı?'
+  sifresifirla: 'Gönder'
+  hesabimisil: 'Hesabımı sil'
+  guncelle: 'Güncelle'
+  password: 'Parola'
+  remember: 'Beni hatırla'
+  editi: 'Profil Düzenle'
+  yeniy: 'Yeni Yazı'
+  yazid: 'Post Düzenle'
+  postb: 'Post Başlığı'
+  postm: 'Post Mesajı'
+  postg: 'Post Tarihi'
+  begen: 'Bunu beğenenler'
+  yorumat: 'Yorum at'
+  

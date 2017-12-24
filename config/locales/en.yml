@@ -1,0 +1,55 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  hello: "Hello world"
+  welcome: "Root page!"
+  footer: "Fırat University, Faculty of Technology, Software Engineering"
+  anasayfa: "Home Page"
+  yeniyazi: "New Post"
+  kayit: "Sign up"
+  giris: "Sign in"
+  goruntule: 'Show'
+  duzenle: 'Edit'
+  sil: 'Destroy'
+  foto: 'Photo'
+  basliklar: 'Titles'
+  mesajlar: 'Messages'
+  islemler: 'Transactions'
+  duzenleprofil: 'Profil Edit'
+  cikis: 'Logout'
+  girisyap: 'Log in'
+  parolaunuttun: 'forget your password?'
+  onaytalimati: 'Did not you get a confirmation order?'
+  kilitacma: 'Did not you get directions to unlock?'
+  sifresifirla: 'Send'
+  hesabimisil: 'Delete my account'
+  guncelle: 'Update'
+  password: 'Parola'
+  remember: 'Remember me'
+  editi: 'Edit User'
+  yeniy: 'New Post'
+  yazid: 'Post Edit'
+  postb: 'Post title'
+  postm: 'Post message'
+  postg: 'Post date'
+  begen: 'They like it'
+  yorumat: 'Comment'
